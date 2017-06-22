@@ -1,37 +1,9 @@
-## Welcome to GitHub Pages
+The Cistern Project is a collection of network monitoring and analytics software.
 
-You can use the [editor on GitHub](https://github.com/Cistern/cistern.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+The primary project, Cistern, is a network flow collector. It is written in Go and distributed under the BSD license. It is available on GitHub at [github.com/Cistern/cistern](https://github.com/Cistern/cistern).
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+The Cistern Project also consists of several protocol implementations as part of the flow collector which are available as separate packages distributed under the same license:
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Cistern/cistern.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+* sFlow v5: [github.com/Cistern/sflow](https://github.com/Cistern/sflow)
+* SNMP v3: [github.com/Cistern/snmp](https://github.com/Cistern/snmp)
+* Layer 2, 3, and 4: [github.com/Cistern/proto](https://github.com/Cistern/proto)
