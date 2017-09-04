@@ -1,0 +1,19 @@
+{{- partial "header.html" . -}}
+<div class="mid">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h1>Blog</h1>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+<h1 class="post-title">{{ .Title }}</h1>
+<p><span class="date">{{ .Date.Format "Jan 2 2006" }}</span></p>
+  <div class='content'>
+  {{- .Content -}}
+  {{- if isset .Params "author" -}}<p class="post-author">&mdash;{{ .Params.author }}</p>{{- end -}}
+  </div>
+</div>
+{{- partial "footer.html" . -}}

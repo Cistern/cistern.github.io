@@ -1,0 +1,15 @@
+{{- partial "header.html" . -}}
+{{- range .Data.Pages -}}
+  {{- if eq .Type "index" -}}
+    <div class="mid mid-landing">
+      <div class="container">
+        <h1>{{- .Params.midh1 -}}</h1>
+        {{- if isset .Params "midp" -}}<p>{{- .Params.midp -}}</p>{{- end -}}
+      </div>
+    </div>
+    <div class="container content">
+      {{- .Content -}}
+    </div>
+  {{- end -}}
+{{- end -}}
+{{- partial "footer.html" . -}}
