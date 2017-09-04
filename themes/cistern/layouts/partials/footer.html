@@ -1,0 +1,40 @@
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="/docs">Documentation</a></li>
+            <li><a href="https://github.com/Cistern/cistern">GitHub</a></li>
+          </ul>
+      </div>
+      <div class="col-sm-3">
+          <h4>Legal</h4>
+          <p>Copyright &copy; 2017 Preetam Jinka</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script src="/highlight.pack.js"></script>
+<script>
+hljs.initHighlightingOnLoad();
+
+var elems = document.querySelectorAll(".content h1, .content h2, .content h3, .content h4, .content h5, .content h6");
+for (var i = 0; i < elems.length; i++) {
+  var el = elems[i];
+  var id = el.id;
+  if (id === "") {
+    continue;
+  }
+  var link = document.createElement("a");
+  link.href = "#"+id;
+  link.textContent = "#";
+  el.appendChild(link);
+  link.className = 'content-heading-link';
+  el.className = 'content-heading';
+}
+</script>
+</body>
+</html>

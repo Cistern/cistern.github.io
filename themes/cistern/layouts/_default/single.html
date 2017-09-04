@@ -1,0 +1,15 @@
+{{- partial "header.html" . -}}
+<div class="mid">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h1>{{- .Params.midh1 -}}</h1>
+        {{- if isset .Params "midp" -}}<p>{{- .Params.midp -}}</p>{{- end -}}
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+{{- .Content -}}
+</div>
+{{- partial "footer.html" . -}}

@@ -1,0 +1,23 @@
+{{- partial "header.html" . -}}
+<div class="mid">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h1>Blog</h1>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+{{ range .Paginator.Pages }}
+<article class="item">
+    <h4><a href="{{ .RelPermalink }}" title="{{ .Title }}">{{ .Title }}</a></h4>
+    <p><strong>{{ .Date.Format "Jan 2 2006" }}</strong></p>
+    <p>
+        {{ .Summary  }}
+    </p>
+    <a class="read-more" href="{{ .RelPermalink }}" title="{{ .Title }}">Read More <i class="icon-right-big"></i></a>
+</article>
+{{ end }}
+</div>
+{{- partial "footer.html" . -}}

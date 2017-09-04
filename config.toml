@@ -1,0 +1,5 @@
+baseurl = "https://cistern.github.io/"
+title = "Cistern"
+languageCode = "en-us"
+theme = "cistern"
+publishDir = "docs"
