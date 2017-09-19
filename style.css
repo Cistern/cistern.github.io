@@ -1,9 +1,15 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 body {
   font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
   padding: 0;
   font-size: 13px;
   color: #333;
   -webkit-font-smoothing: antialiased;
+  margin-bottom: 15rem;
 }
 
 .container {
@@ -69,10 +75,12 @@ h1.post-title {
 
 footer {
   font-size: 12px;
-  margin-top: 6rem;
   background-color: #eee;
   padding: 3rem 0;
   color: #666;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 footer a {
